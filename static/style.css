@@ -1,0 +1,131 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size:xx-small;
+    margin: 0 15px; 
+}
+#logo img{
+    height: 42px;
+    filter: invert(1);
+}
+
+#navbar{
+    background-color: rgb(255, 4, 0);
+    padding: 20px;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    text-decoration: none;
+    padding: 12px;
+    color: white;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navbar li a:hover{
+    color: darkred;
+}
+
+#introSection{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background: center / cover no-repeat url('/static/bg.jpg');
+    height: 400px; 
+    background-color: red;
+}
+#introSection .small{
+    font-size: 15px;
+}
+
+
+#missionSection{
+    height: 300px;
+    background-color: white;
+}
+#missionSection h2{
+    text-align: center;
+    padding: 20px;
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 5px 21px;
+    height: 200px;
+}
+.card h3{
+    text-align: center;
+    margin: 8px;
+} 
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 131px;
+    padding: 0 14px;
+    margin: 5px 9px;
+}
+.card-img img{
+    height:inherit; 
+}
+.card-content{
+    padding: 25px;
+}
+.card-content p{
+    font-size: 20px;
+}
+
+#sponserSection{
+    height: 300px;
+    background-color: rgb(255, 202, 105);
+}
+#sponserSection h2{
+    text-align: center;
+    padding: 20px;
+}
+#sponsers{
+    height: 200px;
+    max-width: 1000px;
+    margin: -25px auto;
+}
+.spImage{
+    height: 80%;
+    margin:20px;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}

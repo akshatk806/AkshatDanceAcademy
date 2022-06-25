@@ -1,0 +1,60 @@
+doctype html
+html
+    head    
+        link(rel='icon',href='../static/dance.png')
+        title Akshat Dance Academy
+        style
+            include ../static/style.css 
+    body 
+        nav#navbar 
+            ul
+                #logo   
+                    img(src="../static/dance.png")
+                    | &copy;ADA
+                li #[a(href='/') Home]
+                li #[a(href='/') About]
+                li #[a(href='/') Contact Us]
+                li #[a(href='/') Services]
+
+        section#introSection 
+            div Welcome to Akshat's Dance academy 
+            div.small Eat sleep Dance repeat
+        
+        section#missionSection 
+            h2 Our Mission
+            .card  
+                h3 Dance perfection 
+                .card-box
+                    .card-img
+                        img(src='../static/d1.png') 
+                    .card-content
+                        p This is the best dance academy of Delhi
+            .card  
+                h3 Dance the way you like
+                .card-box 
+                    .card-img
+                        img(src='../static/d2.png') 
+                    .card-content
+                        p Learn from the experts
+            .card  
+                h3 Evolve your personality
+                .card-box
+                    .card-img
+                        img(src='../static/favicon.png') 
+                    .card-content
+                        p Learn with us
+
+        section#sponserSection 
+            h2 Our Sponsers
+            #sponsers
+                img(src='../static/microsoft.png',class='spImage')
+                img(src='../static/meta.png',class='spImage')
+                img(src='../static/google.png',class='spImage')
+                img(src='../static/amazon.jpg',class='spImage')
+
+
+        footer#footer
+            | &copy; Copyright 2022 AkshatDanceAcademy.com | All rights are reserved
+
+        script 
+            include ../static/index.js
